@@ -1,0 +1,236 @@
+* {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        font-size: 14px;
+        font-weight: bold;
+        color: whitesmoke;
+
+        li {
+            a {
+                padding: 9px 6px;
+                text-decoration: none;
+                color: whitesmoke;
+
+            }
+        }
+    }
+
+    h2 {
+        margin-left: 60px;
+    }
+
+    nav {
+        margin-right: 60px;
+    }
+}
+
+
+#home,
+#about,
+#vision {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        width: 100%;
+        flex-direction: column;
+        padding: 10%;
+
+        h4,
+        h3,
+        h1,
+        p {
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+    }
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    overflow: auto;
+    padding: 100px 10%;
+
+    div.product-dev {
+
+        width: 185px;
+        height: 244px;
+        margin-bottom: 22px;
+
+        div.img {
+            height: 90%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 7px;
+            border-radius: 6%;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                min-width: 100%;
+                max-height: 100%;
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        div.imgTitle {
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            font-size: 15px;
+        }
+    }
+}
+
+#contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div.contact-cont {
+        width: 31rem;
+        height: 30rem;
+        border-radius: 6%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 7px;
+
+        h3 {
+            text-align: center;
+        }
+
+        div.fromGroup {
+            display: flex;
+            flex-direction: column;
+            padding: 0 24px;
+            gap: 8px;
+            margin-bottom: 14px;
+
+            input {
+                display: block;
+                height: 24px;
+                padding: 7px;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #495057;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
+                border-radius: .25rem;
+                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            }
+        }
+    }
+}
+
+h1 {
+    font-size: 3.3rem;
+    margin-bottom: 12px;
+}
+
+h4 {
+    margin-bottom: 2px;
+}
+
+@media only screen and (max-width: 750px) {
+
+    #home,
+    #about,
+    #vision {
+        flex-direction: column;
+
+        div {
+            position: relative;
+            height: 50%;
+            padding: 0;
+
+            img {
+                min-width: 70%;
+                max-height: 70%;
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        div:last-child {
+            width: 75%;
+        }
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        margin-bottom: 12px;
+    }
+
+    h4 {
+        margin-bottom: 2px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    header {
+        h2 {
+            margin-left: 010px;
+        }
+
+        nav {
+            display: none;
+        }
+    }
+
+    #products {
+        div.product-dev {
+            width: 137px;
+            height: 194px;
+            margin-bottom: 27px;
+        }
+    }
+
+    #contact {
+        div.contact-cont {
+            width: 19rem;
+            height: 27rem;
+        }
+    }
+
+    textarea {
+        height: 105px !important;
+    }
+}
