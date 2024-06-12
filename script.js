@@ -36,7 +36,28 @@ window.addEventListener('DOMContentLoaded', function () {
         }, {
             img: 'pro7.jpg',
             title: 'product 1'
-        },
+        },{
+            img: 'pro8.jpg',
+            title: 'product 1'
+        },{
+            img: 'pro9.jpg',
+            title: 'Paper pallets'
+        },{
+            img: 'pro10.jpg',
+            title: 'Bio plastics'
+        },{
+            img: 'pro11.jpg',
+            title: 'Paper bubble wrap'
+        },{
+            img: 'pro12.jpg',
+            title: 'Paper wrap'
+        },{
+            img: 'pro13.jpg',
+            title: 'Dunnage airbags'
+        },{
+            img: 'pro14.jpg',
+            title: 'Wood chips pallets'
+        }
 
     ]
 
