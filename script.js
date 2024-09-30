@@ -1,11 +1,13 @@
 window.addEventListener('DOMContentLoaded', function () {
-    const links = document.querySelectorAll('nav a');
+    const links = document.querySelectorAll('a');
     links.forEach(link => {
         link.addEventListener('click', smoothScroll);
     });
 
     function smoothScroll(e) {
         let section = e.target.id.split('Tab')
+        console.log(e.target);
+        
         const targetSection = document.getElementById(section[0]);
         window.scrollTo({
             top: targetSection.offsetTop,
